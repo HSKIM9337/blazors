@@ -152,11 +152,19 @@ a[b-cviw058ykv] {
 }
 
 .navbar__logo[b-cviw058ykv] {
+    align-items :baseline;
     font-size: 24px;
     color: violet;
+    display: flex;
+   
+}
+.div_navbar[b-cviw058ykv]{
+    display:flex;
+
 }
 
 .navbar__menu[b-cviw058ykv] {
+    align-items: baseline;
     display: flex;
     list-style: none;
     padding-left: 0;
