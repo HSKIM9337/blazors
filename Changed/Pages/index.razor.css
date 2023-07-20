@@ -1,0 +1,130 @@
+﻿* {
+    font-family: 'Orbit', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Orbit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Orbit', sans-serif;
+}
+
+.navbar {
+    background-image: radial-gradient(759px at 14% 22.3%, rgb(10, 64, 88) 0%, rgb(15, 164, 102) 90%);
+    width : 100%;
+}
+
+.navbar__logo {
+    font-size: 24px;
+    color: violet;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+    .navbar__menu li {
+        padding: 8px 12px;
+    }
+
+        .navbar__menu li:hover {
+            background-color: grey;
+            border-radius: 4px;
+        }
+
+.navbar__links {
+    list-style: none;
+    padding-left: 0;
+    color: teal;
+    display: flex;
+}
+
+    .navbar__links li {
+        padding: 8px 12px;
+    }
+
+.navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+        .navbar__menu li {
+            width: 100%;
+            text-align: center;
+        }
+
+    .navbar__links {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar__toggleBtn {
+        display: block;
+    }
+
+    .navbar__menu.active,
+    .navbar__links.active {
+        display: flex;
+    }
+}
+
+
+
+input::placeholder {
+    color: rgb(15, 164, 102);
+    text-indent: 25px;
+}
+
+.search-input {
+    background-color: transparent;
+    background-image: url(/images/search.svg);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 35px; 
+    border: none;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+    .search-input:hover {
+        background-color: #f7f7f7;
+        border: 1px solid black;
+    }
+
+    .search-input:focus-visible {
+        background-color: #f7f7f7;
+        background-image: none;
+        border: 1px solid black;
+        text-indent : 10px;
+        
+    }
+    .search-input:visited {
+        background-color: #f7f7f7;
+        background-image: none;
+        border: 1px solid black;
+        text-indent: 10px;
+    }
